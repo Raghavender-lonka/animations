@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+#particles-js {
+  background-color: firebrick;
+  height: 100vh;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: antiquewhite;
+  opacity: 0.8;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.form-container,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+input {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  outline: none;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  outline: none;
+  background-color: firebrick;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+@media all and (max-width: 600px) {
+  .form {
+    width: 80%;
+    /* padding: 0; */
+  }
+}
